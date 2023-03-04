@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.root {
+	-fx-backbroung-color: white;
+	-fx-font-family: 'Roboto', sans-serif;
+	-fx-font-weight: 400;
+}
+
+.label{
+	-fx-font-size:14px;
+	-fx-font-weight:500;
+}
+
+.text-field {
+    -fx-background-color: #F5F6F8;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color:#D1D3DA;
+  	-fx-font-weight: 300;
+}
+
+.text-field:focused {
+	-fx-border-color: #7C7E85;
+}
+
+.toggle-button {
+	-fx-background-color: transparent;
+	-fx-border-color: grey;
+	-fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+
+.toggle-button:hover {
+	-fx-background-color: #aaafb3;
+	-fx-cursor:hand;
+}
+
+.label-User {
+	-fx-font-weight: 700;
+	-fx-font-size: 19px;
+}
+
+.label-User:hover {
+	-fx-underline: true;
+	-fx-cursor: hand;
+}
+
+.label-Date {
+	-fx-font-weight: 500;
+	-fx-font-size: 15px;
+}
+
+.label-warning {
+	-fx-text-fill: red;
+	-fx-font-size: 17px;
+	-fx-font-weight: 300;
+}
+
+.text-area-write {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-background-radius: 10px;
+	-fx-border-radius: 10px;
+	-fx-font-size: 18px;
+}
+
+.text-area-write .content {
+	-fx-background-color: #F5F8FA;
+	-fx-border-color: #E1E8ED;
+	-fx-background-radius: 10px;
+	-fx-border-radius: 10px;
+}
+
+.button-post {
+	-fx-background-color: #1DA1F2;
+	-fx-background-radius: 15px;
+	-fx-text-fill: white;
+	-fx-border-color: #1DA1F2;
+	-fx-border-radius: 15;
+	-fx-font-weight: 700;
+	-fx-font-size:16px;
+}
+
+.button-post:hover {
+	-fx-background-color: #37BBFF;
+	-fx-cursor: hand;
+	-fx-border-color: #37BBFF;
+}	
+
+.button-cancel {
+	-fx-background-color: #14171A;
+	-fx-background-radius: 15px;
+	-fx-text-fill: white;
+	-fx-border-color: #14171A;
+	-fx-border-radius: 15;
+	-fx-font-weight: 700;
+	-fx-font-size:16px;
+}
+
+.button-cancel:hover {
+	-fx-border-color: #2E3134;
+	-fx-background-color: #2E3134;
+	-fx-cursor: hand;
+}
+
+.button-image {
+	-fx-background-color: null;
+	-fx-border-radius: 30px;
+	-fx-border-color: null;
+}
+
+.button-image:hover{
+	-fx-border-color: #AAB8C2;
+	-fx-background-color: #E1E8ED;
+	-fx-cursor: hand;
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+ .dialog-pane{
+  -fx-font-family: 'Roboto', sans-serif;
+  -fx-font-weight: 400;
+  -fx-border-color: #F5F6F8;
+  -fx-border-width: 1px;
+ }
+
+/**Costumization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+  -fx-background-color: #D1D3DA;
+}
+
+.dialog-pane > .content.label {
+   -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+   -fx-background-color: #F5F6F8;
+   -fx-text-fill: #000000;
+   -fx-font-size: 15px;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+  -fx-font-weight: 700;
+  -fx-background-color: #F5F6F8;
+}
+
+.dialog-pane:header .header-panel .label{
+  -fx-background-color: #F5F6F8;
+  -fx-background-radius:10px;
+  -fx-text-fill: #000000;
+  -fx-font-size: 15px;
+  -fx-font-weight: 700;
+}
+
+
+/**Costumization of Buttons**/
+.dialog-pane .button{
+	-fx-background-color: #F5F6F8;
+	-fx-background-radius: 15px;
+	-fx-text-fill: #000000;
+	-fx-border-color: #D1D3DA;
+	-fx-border-radius: 15;
+ }
+
+.dialog-pane .button:hover{     
+	-fx-border-color: #ECEEF2;
+	-fx-background-color: #FFFFFF;
+	-fx-cursor: hand;
+ }
+ 
+ .dialog-pane .button:pressed {
+ 	-fx-background-color: #F5F6F8;
+	-fx-border-color: #D1D3DA;
+ }

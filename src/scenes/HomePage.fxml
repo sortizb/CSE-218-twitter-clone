@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="769.0" prefWidth="1137.0" stylesheets="@../styles/homePage.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomePageController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="222.0" spacing="20.0" styleClass="button-menu" BorderPane.alignment="TOP_CENTER">
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" prefHeight="116.0" prefWidth="173.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/twitter-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="58.0" prefWidth="138.0" styleClass="label-title" text="Twitter" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onMouseClicked="#changeToHome" prefHeight="20.0" prefWidth="173.0" styleClass="button-hud" text="Home">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#changeToExplore" prefHeight="20.0" prefWidth="173.0" styleClass="button-hud" text="Explore">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/explore.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#changeToProfile" prefHeight="20.0" prefWidth="173.0" styleClass="button-hud" text="Profile">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/profile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#changeToTrending" prefHeight="20.0" prefWidth="173.0" styleClass="button-hud" text="Trendings">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/trending-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#tweet" prefHeight="68.0" prefWidth="173.0" styleClass="button-tweet" text="Tweet" />
+            <VBox prefHeight="350.0" prefWidth="173.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#logOut" prefHeight="20.0" prefWidth="173.0" styleClass="button-hud" text="LogOut">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane fx:id="bpVariable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <HBox alignment="CENTER" prefHeight="94.0" prefWidth="738.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#reload" styleClass="button-search">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="57.0" styleClass="label-normal" text="Search: " />
+                  <TextField fx:id="tfSearch" prefHeight="42.0" prefWidth="427.0" promptText="Search by username or keywords">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ChoiceBox fx:id="cbSearchType" prefHeight="36.0" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#search" styleClass="button-search">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>

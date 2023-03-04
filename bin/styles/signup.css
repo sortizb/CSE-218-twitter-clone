@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.root {
+	-fx-background-color: white;
+	-fx-font-family: 'Roboto', sans-serif;
+	-fx-font-weight: 400;
+	-fx-font-size: 15px;
+}
+
+#lblTitle {
+	-fx-font-weight: 700;
+	-fx-font-size: 25px;
+}
+
+#lblSubTitle {
+	-fx-font-weight: 500;
+	-fx-font-size: 18px;
+}
+
+.label-warning {
+	-fx-text-fill: red;
+	-fx-font-size: 12px;
+	-fx-font-weight: 300;
+}
+
+.button-confirm {
+	-fx-background-color: #1DA1F2;
+	-fx-background-radius: 15px;
+	-fx-text-fill: white;
+	-fx-border-color: #1DA1F2;
+	-fx-border-radius: 15;
+	-fx-font-weight: 700;
+}
+
+.button-confirm:hover {
+	-fx-background-color: #37BBFF;
+	-fx-cursor: hand;
+	-fx-border-color: #37BBFF;
+}
+
+.button-cancel {
+	-fx-background-color: #14171A;
+	-fx-background-radius: 15px;
+	-fx-text-fill: white;
+	-fx-border-color: #14171A;
+	-fx-border-radius: 15;
+	-fx-font-weight: 700;
+}
+
+.button-cancel:hover {
+	-fx-border-color: #2E3134;
+	-fx-background-color: #2E3134;
+	-fx-cursor: hand;
+}
+
+
+.button-prev {
+	-fx-background-color: #AAB8C2;
+	-fx-background-radius: 15px;
+	-fx-text-fill: #000000;
+	-fx-border-color: #AAB8C2;
+	-fx-border-radius: 15;
+	-fx-font-weight: 700;
+}
+
+.button-prev:hover{
+	-fx-border-color: #C4D2DC;
+	-fx-background-color: #C4D2DC;
+	-fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-color: #F5F6F8;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color:#D1D3DA;
+  	-fx-font-weight: 300;
+}
+
+.text-field:focused {
+	-fx-border-color: #7C7E85;
+}
+
+.password-field {
+	-fx-background-color: #F5F6F8;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color:#D1D3DA;
+  	-fx-font-weight: 300;
+}
+
+.password-field:focused {
+	-fx-border-color: #7C7E85;
+}
+
+.text-area{
+	-fx-text-fill: red;
+	-fx-font-size: 10px;
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-font-weight: 300;
+}
+
+.text-area .content {
+	-fx-text-fill: red;
+	-fx-font-size: 10px;
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-font-weight: 300;
+}
+
+.radio-button .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: #323232;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 10px;
+    -fx-padding: 3px;
+}
+.radio-button .radio:selected {
+    -fx-background-color: #FFFFFF;
+    -fx-background-image: null;
+}
+.radio-button -radio:armed {
+    -fx-background-color: #FFFFFF;
+    -fx-background-image: null;
+}
+.radio-button -radio:determinate {
+    -fx-background-color: #FFFFFF;
+    -fx-background-image: null;
+}
+.radio-button -radio:indeterminate {
+    -fx-background-color: #FFFFFF;
+    -fx-background-image: null;
+}
+.radio-button .dot {
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+}
+
+.radio-button .dot:hover {
+	-fx-background-color: #D1D3DA;
+}
+
+.progress-bar .track {
+	-fx-background-color: #DDEBF5;
+	-fx-background-radius: 20px;
+}
+
+.progress-bar .bar {
+	-fx-indeterminate-bar-animation-time: 3.0;
+	-fx-background-color: #1DA1F2;
+	-fx-background-radius: 20px;
+}
+

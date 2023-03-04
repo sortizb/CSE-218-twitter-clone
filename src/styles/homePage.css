@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.root {
+	-fx-background-color: white;
+	-fx-font-family: 'Roboto', sans-serif;
+	-fx-font-weight: 400;
+}
+
+.label-title {
+	-fx-font-weight: 700;
+	-fx-font-size: 34px;
+}
+
+.label-subtitle {
+	-fx-font-weight: 700;
+	-fx-font-size: 20px;
+}
+
+.label-normal {
+	-fx-font-weight:500;
+	-fx-font-size: 15px;
+}
+
+.button-menu {
+	-fx-background-color: #E1E8ED;
+}
+
+.button-hud {
+	-fx-font-weight: 500;
+	-fx-font-size: 20px;
+	-fx-background-color: #F5F8FA;
+	-fx-background-radius: 15px;
+}
+
+.button-hud:hover {
+	-fx-cursor: hand;
+	-fx-background-color: #ffffff;
+}
+
+.button-hud:pressed {
+	-fx-background-color:#F5F8FA;
+}
+
+.button-tweet {
+	-fx-font-weight: 700;
+	-fx-font-size: 20px;
+	-fx-background-color: #1DA1F2;
+	-fx-background-radius: 15px;
+	-fx-text-fill: white;
+}
+
+.button-tweet:hover {
+	-fx-background-color: #37BBFF;
+	-fx-cursor: hand;
+}
+
+.button-tweet:pressed {
+	-fx-background-color: #1DA1F2;
+}
+
+.button-search {
+	-fx-background-color: #E1E8ED;
+	-fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+
+.button-search:hover {
+	-fx-background-color: #FBFFFF;
+	-fx-cursor: hand;
+}
+
+.button-search:pressed {
+	-fx-background-color: #E1E8ED;
+}
+
+.text-field {
+    -fx-background-color: #F5F6F8;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color:#D1D3DA;
+  	-fx-font-weight: 300;
+}
+
+.text-field:focused {
+	-fx-border-color: #7C7E85;
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+}

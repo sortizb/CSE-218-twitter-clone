@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="738.0" spacing="15.0" stylesheets="@../styles/homePage.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchSceneController">
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+   <children>
+      <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="173.0" spacing="10.0">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="label-subtitle" stylesheets="@../styles/homePage.css" text="Searched:" />
+            <Label fx:id="lblWordSearched" styleClass="label-normal" text="Word Searched" />
+            <Label styleClass="label-normal" text="in" />
+            <Label fx:id="lblSearchType" styleClass="label-normal" text="Posts/Users" />
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <ListView fx:id="lvSearch" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#noListFocus" onMousePressed="#noListFocus" onMouseReleased="#noListFocus" prefHeight="900.0" prefWidth="688.0" />
+      <HBox alignment="CENTER" prefHeight="28.0" prefWidth="688.0">
+         <children>
+            <Button fx:id="btnShowMore" mnemonicParsing="false" onMouseClicked="#showMore" prefHeight="0.0" prefWidth="139.0" styleClass="button-tweet" text="Show More" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
