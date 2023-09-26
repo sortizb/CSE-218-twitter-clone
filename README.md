@@ -1,2 +1,2 @@
 # CSE-218-twitter-clone
-My CSE 218 Project, which is a clone of twitter made in Java
+The project for my Data Structures & Algorithms for class consisted in creating a Twitter-Clone app using different data structures and algorithms properly.
