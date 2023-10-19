@@ -10,6 +10,7 @@ The Twitter clone app is a local application that allows users to perform variou
 
 - User account creation
 - Tweet posting with images
+- Post Liking
 - Character limit per post
 - Commenting on tweets
 - Tweet deletion
